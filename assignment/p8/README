@@ -1,0 +1,12 @@
+*Due to lack of time, the traceroute is only partially completed where it can send only 6 probes(2 per each ttl) 
+
+*how to use -
+./trace www.google.com
+
+
+*the plan for introducing multithreading -
+
+-the number of threads would be taken as an command line argument.( lets say n)
+-each thread while its creation would be passed on with a number(say m) ex.1,2,...n-1
+-so each thread would start sending probes with ttl of 'm' and once it receives its ICMP reply it will send the next probe with ttl with ttl = n+m
+-this way the process gets faster n times than the normal sequential traceroute.

@@ -1,0 +1,3 @@
+1) each client message should be of format  <receiver's nick> : <msg>
+2) each childserver can handle MAX number of clients. where MAX is defined in childserver.c
+
